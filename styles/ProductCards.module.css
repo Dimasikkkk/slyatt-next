@@ -1,0 +1,80 @@
+.cards {
+  margin: 0 auto 90px auto;
+  width: 1140px;
+  height: 738px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-flow: wrap;
+
+}
+
+
+.card {
+  margin-bottom: 47px;
+    /* width: 237px; */
+    height: 344px;
+    position: relative;
+    text-align: center;
+
+}
+
+.productName {
+  padding-top: 10px;
+  letter-spacing: 0.02em;
+  font-size: 15px;
+  display: block;
+  text-decoration: none;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 600;
+  color: black;
+}
+
+.productPrice {
+  padding-top: 3px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: block;
+  color: black;
+
+}
+
+
+.relevance {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  position: absolute;
+  display: block;
+  padding-left: 15px;
+  padding-top: 20px;
+  color: black;
+
+
+}
+
+
+.productImage {
+    position: relative;
+}
+
+ .productImage img.imageHover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
+  outline: solid 1px black;
+}
+.productImage:hover img.imageHover {
+  opacity: 1;
+}
+

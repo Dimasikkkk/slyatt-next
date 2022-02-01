@@ -1,0 +1,123 @@
+
+
+.main {
+  width: 1140px;
+  margin: 90px auto;
+  height: 1292px;
+}
+
+
+
+.navCont {
+  height: 28px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+}
+
+
+.navbar {
+  display: flex;
+  margin-bottom: 90px;
+}
+
+
+
+.navbar li{
+  margin-right: 7px;
+}
+
+
+.navbar li a {
+  font-size: 17px;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 500;
+  color: black;
+  transition: 0.3s;
+
+}
+
+.navbar a {
+  position: relative;
+  text-decoration: none;
+
+}
+
+.navbar a:hover {
+  color: #929292;
+  transition: 0.3s;
+}
+
+
+
+.navbar li {
+  list-style-type: none;
+}
+
+
+
+.h1 {
+  font-size: 58px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-align: center;
+  margin-top: 90px;
+}
+
+.newsCard {
+  /* width: 1036px;
+  margin: 0 auto; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+
+
+.year {
+  width: 95px;
+  border: solid 2px black;
+  margin-bottom: 22px;
+}
+
+
+.newsYear {
+  width: 143px;
+  height: 87px;
+  display: block;
+  margin-bottom: 50px;
+
+}
+
+.card {
+  width: 312px;
+  /* height: 328px; */
+  background-color: #F2F2F2;
+  position: relative;
+  margin-bottom: 47px;
+  padding-bottom: 20px;
+}
+
+
+.newsDate {
+  display: block;
+  /* margin-left: 23px;
+  margin-bottom: 14px;
+  margin-top: 22px; */
+  padding: 22px 23px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.newsName {
+  display: block;
+  text-align: justify;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  padding: 0 23px;
+}

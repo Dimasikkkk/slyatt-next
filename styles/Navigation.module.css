@@ -1,0 +1,52 @@
+.navCont {
+  width: 842px;
+  height: 28px;
+  margin: 45px auto;
+
+}
+
+
+.navbar {
+  display: flex;
+}
+
+.navbar li:not(:last-child) {
+margin-right: 42px;
+}
+
+
+.navbar li a {
+font-size: 17px;
+font-family: 'Catamaran', sans-serif;
+font-weight: 400;
+color: black;
+
+}
+
+.navbar a {
+position: relative;
+/* padding: 0 10px; */
+text-decoration: none;
+}
+
+
+
+/* .active a{
+border-bottom: 2px solid black;
+border-radius: 2px;
+} */
+
+.navbar a:after {
+content: "";
+position: absolute;
+background-color: black;
+height: 2px;
+width: 0%;
+bottom: 1px;
+left: 0;
+transition: 0.3s;
+}
+
+.navbar a:hover:after {
+width: 100%;
+}
