@@ -39,3 +39,7 @@ label {
   font-weight: 600;
 }
 
+/* Убрать скролл
+::-webkit-scrollbar {
+  width: 0;
+} */

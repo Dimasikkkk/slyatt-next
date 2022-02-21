@@ -6,6 +6,7 @@ import Link from 'next/link';
 
 const Header = () => {
   return (
+    <header>
     <div className={styles.containerHed}>
       <div className={styles.nav}>
         <ul className={styles.menu}>
@@ -42,6 +43,7 @@ const Header = () => {
     </div>
     {/* <hr className={styles.hr}/> */}
   </div>
+  </header>
 
   );
 };

@@ -1,10 +1,12 @@
 import styles from '../styles/ProductCards.module.css'
 import Link from 'next/link';
 import React from 'react';
+import db from '../utils/db';
+import Product from '../models/Product';
 
 
 
-function ProductCards ({ other }) {
+function ProductCards (props) {
   // const [items, SetItems] = React.useState([])
 
   // fetch('https://61f184ad072f86001749f257.mockapi.io/items')
@@ -15,27 +17,27 @@ function ProductCards ({ other }) {
   // });
 
 
-
-
+  const {products} = props;
+  console.log(products);
   return (
     <div className={styles.cards}>
-      {other.map(item =>
+
+      {products.map((product) =>
+
+      <div className={styles.card} key={product.id}>
 
 
-      <div className={styles.card} key={item.id}>
-
-
-        <Link href={`/products/${encodeURIComponent(item.productUrl)}`}><a>
+        <Link href={`/products/${encodeURIComponent(product.name.toLowerCase().replaceAll(' ', '_'))}`}><a>
           <div className={styles.productImage}>
           <span className={styles.relevance}>New</span>
-            <img src={item.imageMain} alt="" className={styles.imageMain} width={237} height={288}/>
-            <img src={item.imageHover} alt="" className={styles.imageHover} width={237} height={288}/>
+            <img src={product.imageMain} alt="" className={styles.imageMain} width={237} height={288}/>
+            <img src={product.imageHover} alt="" className={styles.imageHover} width={237} height={288}/>
 
           </div>
         </a></Link>
           <div className={styles.productInfo}>
-            <span className={styles.productName}>{item.name}</span>
-            <span className={styles.productPrice}>{item.price}</span>
+            <span className={styles.productName}>{product.name}</span>
+            <span className={styles.productPrice}>{product.price}</span>
           </div>
 
       </div>
